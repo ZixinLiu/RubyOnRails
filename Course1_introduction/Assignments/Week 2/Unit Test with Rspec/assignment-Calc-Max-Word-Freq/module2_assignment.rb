@@ -109,9 +109,3 @@ class Solution
 end
 
 
-
-
-
-solu = Solution.new
-solu.analyze_file
-
