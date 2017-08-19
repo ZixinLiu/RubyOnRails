@@ -1,0 +1,61 @@
+ ############ What are helpers and why they are useful ###############
+1. @time in controller
+2. what if we want to format how time looks?
+	- in View? Non-reuseble  (different views want to use the same time format, lead to code duplication)
+	- Controller?  (Should be 'view format' agnostic)
+	- Helper
+
+3. view helper, should not go to controller, reuseble ---> seperate ruby class
+
+4. Everytime you generate controller, you also have helper generated
+
+5. helper generated based on the controller,  any views not only greeter views
+
+ ############## Why use link_to Rails helper #########################
+
+1. Rails provide many build-in helpers: such as link_to
+
+2. link_to: 
+	- parameters:name(what is shown), url path
+	- Hyperlink generator thay displays the name and links to the path 			(a tag is generated for you, with thi s link to helper, 		where the first parameter is the actual name of the link)
+	-Path :
+	    @ regular string eg. coursera.org
+	    @ route defined in the routes.rb file: _url(full path)
+	    									 :_path(relative path)
+	    									 (prefix column when you call rake routes -> variable you can use as a path) 
+
+3. why it is useful?
+	- Instead of specifying a path, you specify a variable
+	- automatically change your page if the variables changes/
+
+4. _url and _path used interchangeably, but according to spec, full path is required in case of redirction
+
+5. people prefer path over url, _url is used in cases of direction.
+instead of retunning html back, this return a request to a browser, the request ask the broswer to get the content of what is requesting, in this case, browser requests a full path (_url)
+
+	<%= link_to "Google", "http//www.google.com" %>
+	<%= link_to "Goodbye", greeter_goodbye_path  %> 
+	greeter_goodbye_path is derived from routes.rb (prefix colum in rake routes)
+
+Summary:
+	1. Helpers: formmater for your view
+	2. when use link_to, there is no need to change things if a path changes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

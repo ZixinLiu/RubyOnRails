@@ -1,0 +1,50 @@
+########### How to create and run your app ##################
+cmd: rails new appname
+cmd: rails new -h # for more options
+## initial Skeleton is made for you , even with some code
+## create gitignore --> versioning your application , GIT
+## cd my_f_app
+## git init --> init repo
+## git add . --> add all files to repo
+## git commit -m "initial commit"
+## Rails provides a built-in server
+## open another terminal win/ tab --> don't need restart server when you make a change
+
+## rails server (rails s)  --> run the server
+## run local web server --> default port 3000
+
+# bundler: one component depends on one version and another
+		  ## component depends on other version, need something to resolve
+		  ## versions ---> bundle
+
+
+## create certain directory structure
+########## Directory Structure (CoC) #########################
+
+## app dir: has c, v, helper
+## conf dir: configuration files, which db (Oracle, MySql) going to used
+			## username, password to the db
+## DB dir: migration scripts of changing from one db snapshot to another
+		  ## add some columns or tables
+		  ## SQlite (if use) database
+		  ## files for sql db
+## public dir:  static files, html(that never change)
+## Gemfile/Gemfile.lock: used by bundler, sepcify the dependcies and interaction
+						# between dependecies in your app
+
+########## Adding static pages to your application ############
+## the web server looks into a public directly before looking anywhere else
+## if a file can be found in the public dir, it right awat display that file
+## eg. add complete static html (always static)--> public directory
+
+
+
+
+
+
+
+
+
+
+
+

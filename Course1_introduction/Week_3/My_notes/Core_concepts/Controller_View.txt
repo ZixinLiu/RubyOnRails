@@ -1,0 +1,54 @@
+### How to generate dynamic contents in Rails (Controller)
+1. controller(classes) contan actions(Ruby Methods) and orchestrate web requests
+
+2.Rails can quickly generate a controller and 0 or more actions with their associated views
+
+3. Syntax: rails generate(g) controller controller_name [action1 action2] 
+	e.g rails g controller my_greeter hello
+		controller generated: app/controllers/my_greeter_controller.rb
+		
+		view generated: app/views/my_greeter/hello.html.erb ---> expect HTML file
+
+4. View file looks like HTML, it also has .erb extension
+
+### How to generate action
+1. hello action is just a regular(empty in this case) Ruby method
+
+2. what if we want to add a goodbye action to be the greeter controller
+	--->need to add goodbye.html.erb (viewer) in Viewer folder??
+	---> not right, next time!!!!!
+	----> routes2
+
+## What is ERB(Embedded Ruby)
+1. ERB is a temp library that lets you embed Ruby into your HTML
+
+2. two tag pattern:
+	<% ....ruby code ....%> evaluate Ruby code(instantiation)
+	<%= ...ruby code ....%> output evaluated Ruby code
+
+3.Embed dynamic content to static html content
+
+Summary
+
+1. Conroller contain actions (methods)
+2 Ways to evaluate (save as a new variable) and output your ruby code in your erb files ---> dynamic contents, return to your browser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

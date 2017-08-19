@@ -1,0 +1,38 @@
+##### How routing works #########
+
+1. idea of routing: before the controller can orchestrate where the request goes - the web request nedd to get routed to the controller
+
+2. routes for hello action is automatically generated (when rails g controller)
+
+3.MVC Cycle
+	- Request sent (request comes to app, if sattic file --> public 				folder, find the file, othrewise go to next)
+	- Router routes request to the controller (action)
+	- Controller <-> model(db)
+	- Contoller invokes View
+	- View randers data
+
+4. All routes need to be specified manually except the first automatically generated in the config/routes.rb
+
+### What is Rake ################
+
+1. Ruby 's build language
+	- Ruby's make (make from C)
+	- No XML - written in Ruby (make file is written in XML)
+2. Rails uses rake to autoate app-related tasks
+	- Database, running tests, etc
+
+####### How to analyze your current route #########
+
+1. To see a list of rake tasks for your app (what your rake supports)
+	- cmd: rake --tasks 
+2. Zero-in on an individual rake task and what it does with a --describe flag
+	- cmd: rake --describe task_name
+	- cmd: rake --describe routes
+	- cmd: rake routes
+
+---> GIVE YOU : variable name, URL pattern(diff format files), controller# actions
+
+
+Summary
+1. Router directs request to the right controller
+2. rake  routes: what routes are current defined for your application

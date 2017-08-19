@@ -1,0 +1,78 @@
+##Why Use Rails
+### 1. COC : convention over configuration
+## a software design paradigm used by software framework 
+## that attempts to decrease the number of decisions that 
+## the developer using the framework is required to making without
+## losing flexibility
+
+## assume to follow some conventions
+## less code to write
+	##some code Rails automatically generates for you
+	## oftentimes, there is no need to write code at all
+## learn it once - know what to expect the next time    
+
+### 2. Database Abstraction Layer
+## A database abstraction layer is an application programming interface which 
+## unifies the communication between a computer application and databases 
+## such as SQL Server, DB2, MySQL, PostgreSQL, Oracle or SQLite. 
+## Traditionally, all database vendors(卖主) provide their own interface 
+## tailored(定做的) to their products, which leaves it to the application programmer 
+## to implement code for all database interfaces 
+## he or she would like to support. 
+## Database abstraction layers reduce the amount of work by providing a consistent API 
+## to the developer and hide the database specifics behind this interface as much as possible. 
+## There exist many abstraction layers with different interfaces in numerous programming languages. 
+## If an application has such a layer built in, it is called database-agnostic.
+
+
+## no need to deal with low level db details
+## no more sql
+## important to understant the SQL generated
+## ORM(Object relational Mapping): Mapping your database to your ruby classes
+## a programming technique for converting data between incompatible type systems 
+## using object-oriented programming languages.
+
+## 3.Agile - Friendly
+## 4.Don't Repeat your self Principle
+## 5.Cross-platform
+## 6.open source
+## 7.Modular: swip out different components easily
+
+####################################################################################
+## SQLite: Rails database by default
+	## Self-contained, severless, zero-configuration, transactional
+		## rational SQL database engine
+	## file setting on your file system but act as rational db engine
+	## Benefits: don't have to configure(安装) a complicated database engine
+				## to start your application, the ability to interact to the db
+				## is right there. Because the db development is abstracted, you 
+				## are able to switch different db engine when you want to 
+
+
+#######################################################################################
+## MVC: Model View Controller
+## well-established software pattern used by many web and desktop frameworks
+## Model layer: represent the data of application is working with (business logic)
+## View:  visual representation of data (XML, HTML, JSON)
+## Controller: orchestrates interaction between the model and view
+		
+## browser --> make a query --> controller interact with model ---> model get
+## data from db ---> controller has data --> pass data to view(HTML page) --> browser	
+
+## Rails is good for rapid protytping (原型设计)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

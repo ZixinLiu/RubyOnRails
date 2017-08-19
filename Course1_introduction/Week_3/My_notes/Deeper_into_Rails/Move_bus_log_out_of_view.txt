@@ -1,0 +1,47 @@
+#### how to move business logic (商业规则， 业务逻辑) out of view and into controller in order to comply(遵从) with CMV pattern ###########
+
+1. if the action (method) is not really doing anything(empty), remove it
+
+2. As long as there is a proper route defined and there is a properly nmaed view file/template, the action method does not have to be there and Rails will find the correct template by convention
+
+3. Comment out def hello, def goodbye in the controller
+
+4. Our app "work", but business logic does not belong in the View, the view should contain as little ruby code as possible ---> logic should go to controller
+
+
+######## How long the controller's instance variables stay in place######
+
+1. With the new controller and view, we found that the number viewed always be 1, why?
+
+2. Unlike other framework, you cannot store values in the controller's instance variables in between requests.
+
+3. Every new request, it create a new instance variable
+
+4 Alternatives??
+	- http session
+	- database
+
+
+
+Summary
+1. keep business logic out of view
+2. instance variable in the controller is available to the view
+3. instance variable don't stick around in between requests
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
